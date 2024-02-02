@@ -1,1 +1,109 @@
-// Your styles go here
+/*phone*/
+body{
+    background-color: white;
+}
+
+.flexbox{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.blue-ends{
+    height: 50px;
+    background-color: cyan;
+    width: 100%;
+}
+.black{
+    height: 50px;
+    background-color: black;
+    width: 100%;
+}
+div{
+    flex: 1;
+    margin: 3px;
+
+}
+.blue-big{
+    height: 200px;
+    background-color: cyan;
+    width: 100%;
+}
+.blue-small{
+    height: 200px;
+    background-color: cyan;
+    width: 100%;
+}
+.black-top{
+    height: 25px;
+    background-color: black;
+    width: 100%;
+}
+.flexbox > .middle{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.flexbox > .middle > .blackRowBluebox{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/*tablets*/
+@media screen and (min-width: 600px){
+    .top{
+        display: flex;
+        flex-direction: row;
+    }
+    .black-top{
+        height: 50px;
+        background-color: black;
+    }
+    .blue-big{
+        height: 500px;
+        background-color: cyan;
+    }
+    .flexbox > .middle > .blackRowBluebox > .blackbottom{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .black{
+        height: 98px;
+        background-color: black;
+    }
+    .blue-small{
+        height: 200px;
+        background-color: cyan;
+        width: 100%;
+    }
+    
+}
+
+/*computer*/
+@media screen and (min-width: 800px){
+    .black-top{
+        height: 50px;
+        background-color: black;
+    }
+    .blue-big{
+        height: 400px;
+        background-color: cyan;
+    }
+    .flexbox > .middle{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .flexbox > .middle > .blackRowBluebox{
+        display: flex;
+        flex-flow: column nowrap;
+        flex-direction: column-reverse;
+    }
+    .black{
+        height: 98px;
+        background-color: black;
+        width: 100%;
+    }
+    .blue-small{
+        height: 180px;
+        background-color: cyan;
+        width: 100%;
+    }
+    
+}
